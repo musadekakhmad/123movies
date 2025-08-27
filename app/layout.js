@@ -14,11 +14,11 @@ import AdsterraLayoutWrapper from '../components/AdsterraLayoutWrapper';
 export const metadata = {
   // Changing title and description to English
   title: '123movies | Watch Movies and TV Series Streaming Free',
-  description: 'Your ultimate destination for high-quality Watch movies and TV shows streaming.',
+  description: 'Your ultimate destination for high-quality Watch Movies and TV shows streaming.',
   // Open Graph meta tags for Facebook
   openGraph: {
     title: '123movies | Watch Movies and TV Series Streaming Free',
-    description: 'Your ultimate destination for high-quality Watch movies and TV shows streaming.',
+    description: 'Your ultimate destination for high-quality Watch Movies and TV shows streaming.',
     url: 'https://123movies123.netlify.app/',
     siteName: '123movies',
     images: [
@@ -42,7 +42,7 @@ export const metadata = {
     creator: '@WatchStream123',
     // Changing title and description to English
     title: '123movies | Watch Movies and TV Series Streaming Free',
-    description: 'Your ultimate destination for high-quality Watch movies and TV sho streaming.',
+    description: 'Your ultimate destination for high-quality Watch Movies and TV sho streaming.',
     images: ['https://live.staticflickr.com/65535/54749109544_bcd4a12179_b.jpg'], // Replace with the appropriate image URL
   },
 }; 
