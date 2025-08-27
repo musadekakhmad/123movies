@@ -1,25 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://fmovieswatch.netlify.app/</loc>
+        <loc>https://123movies123.netlify.app/</loc>
         <lastmod>2025-08-26</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://fmovieswatch.netlify.app/movie</loc>
+        <loc>https://123movies123.netlify.app/movie</loc>
         <lastmod>2025-08-26</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://fmovieswatch.netlify.app/tv</loc>
+        <loc>https://123movies123.netlify.app/tv</loc>
         <lastmod>2025-08-26</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://fmovieswatch.netlify.app/search</loc>
+        <loc>https://123movies123.netlify.app/search</loc>
+        <lastmod>2025-08-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://123movies123.netlify.app/home</loc>
         <lastmod>2025-08-26</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
