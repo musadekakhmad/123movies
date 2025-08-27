@@ -44,8 +44,8 @@ export async function generateMetadata({ params }) {
     return {};
   }
 
-  const title = `${details.title || details.name} | FMovies Watch`;
-  const description = details.overview || 'The hub for high-quality free movies and TV shows for you.';
+  const title = `${details.title || details.name} | 123Movies`;
+  const description = details.overview || 'The hub for high-quality free Movies and TV shows for you.';
 
   // Main fix: Prioritize backdrop images for Open Graph.
   // Backdrop images (w1280) are more suitable with a 1.91:1 ratio
@@ -64,8 +64,8 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: title,
       description: description,
-      url: `https://fmovieswatch.netlify.app/${mediaType}/${id}/${slug}`,
-      siteName: 'FMovies Watch',
+      url: `https://123movies123.netlify.app/${mediaType}/${id}/${slug}`,
+      siteName: '123Movies',
       images: [
         {
           url: ogImageUrl,
