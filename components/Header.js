@@ -153,7 +153,7 @@ const Header = () => {
           {/* Logo or Site Name */}
           <div className="flex items-center">
             <a href="/about" className="text-4xl font-extrabold tracking-tight cursor-pointer">
-              <span className="rainbow-text-header">FMovies Watch</span>
+              <span className="rainbow-text-header">123Movies</span>
             </a>
           </div>
 

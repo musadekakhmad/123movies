@@ -291,12 +291,12 @@ export default function Home() {
       {/* Hero Section */}
       <div className="relative mt-8 w-full h-48 md:h-64 lg:h-96 overflow-hidden rounded-xl shadow-2xl" suppressHydrationWarning={true}>
           <img
-              src="https://live.staticflickr.com/65535/54745510629_fe622569fd_b.jpg"
-              alt="FMovies Watch Banner"
+              src="https://live.staticflickr.com/65535/54749109544_bcd4a12179_b.jpg"
+              alt="123Movies Banner"
               className="w-full h-full object-cover object-center"
               onError={(e) => {
                   e.target.onerror = null;
-                  e.target.src = 'https://placehold.co/1920x1080/0d1117/2d3138?text=Erica-Stream';
+                  e.target.src = 'https://placehold.co/1920x1080/0d1117/2d3138?text=123Movies';
               }}
           />
       </div>
@@ -304,7 +304,7 @@ export default function Home() {
       {/* Main content container with padding */}
       <div className="px-4 md:px-8">
         <h1 className="text-2xl font-bold text-center mt-8 mb-12 text-blue-300 leading-tight md:text-3xl">
-          FMovies Watch: The hub for high-quality free movies and TV shows for you.
+          123Movies: The hub for high-quality free Movies and TV shows for you.
         </h1>
 
         {/* Movies Section */}
