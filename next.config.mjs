@@ -2,8 +2,6 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    // Gunakan remotePatterns untuk konfigurasi gambar.
-    // Ini menggantikan images.domains yang sudah deprecated.
     remotePatterns: [
       {
         protocol: 'https',
@@ -29,4 +27,4 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+export default nextConfig;
