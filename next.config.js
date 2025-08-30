@@ -19,6 +19,14 @@ const nextConfig = {
       },
     ],
   },
+  async rewrites() {
+    return [
+      {
+        source: '/:id(\\d+)/:slug',
+        destination: '/movie/:id/:slug',
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
