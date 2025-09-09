@@ -3,10 +3,10 @@
 import { useEffect } from 'react';
 import { handleAdsterraClick } from '../utils/adsterra';
 
-// Component khusus untuk menangani klik secara global
+// Component to handle global clicks
 export default function AdsterraLayoutWrapper({ children }) {
   useEffect(() => {
-    // Adsterra Social Bar and Popunder scripts
+    // Add Adsterra Social Bar and Popunder scripts
     const addAdsterraScripts = () => {
       // Social Bar
       const socialBarScript = document.createElement('script');
@@ -23,10 +23,10 @@ export default function AdsterraLayoutWrapper({ children }) {
 
     addAdsterraScripts();
 
-    // Fungsi untuk memanggil logika adsterra saat ada klik di mana saja
+    // Function to handle Adsterra logic on any click
     const handleClick = (e) => {
-      // Kita perlu membuat dummy targetUrl karena logika handleAdsterraClick memerlukannya
-      // Dalam kasus ini, kita bisa menggunakan URL halaman saat ini.
+      // We need to create a dummy targetUrl as handleAdsterraClick logic requires it.
+      // In this case, we can use the current page URL.
       const targetUrl = window.location.href;
       handleAdsterraClick(e, targetUrl);
     };
