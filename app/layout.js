@@ -61,6 +61,11 @@ export default function RootLayout({ children }) {
           <div className="mx-auto max-w-7xl">
             <Header />
             {children}
+            {/* Adsterra Native Banner Code */}
+            <div className="flex justify-center my-4">
+              <script async="async" data-cfasync="false" src="//discreetisabella.com/a9dce3a8ac7a8f548d4f4ea5ed12df3a/invoke.js"></script>
+              <div id="container-a9dce3a8ac7a8f548d4f4ea5ed12df3a"></div>
+            </div>
             <Footer />
           </div>
         </AdsterraLayoutWrapper>
