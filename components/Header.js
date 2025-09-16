@@ -55,8 +55,21 @@ const Header = () => {
     }
   };
 
-  const handleGenreClick = (mediaType, id) => {
-    window.location.href = `/genre/${mediaType}/${id}`;
+  // Utility untuk membuat slug dari nama genre yang SEO-Friendly (SAMA PERSIS dengan page.js)
+  const createGenreSlug = (name) => {
+    if (!name) return '';
+    return name
+      .toLowerCase()
+      .replace(/&/g, 'and') // Ganti & dengan 'and' - INI PERUBAHAN PENTING
+      .replace(/[^a-z0-9\s-]/g, '') // Hapus karakter khusus
+      .replace(/\s+/g, '-') // Ganti spasi dengan dash
+      .replace(/-+/g, '-') // Hapus multiple dash berturut-turut
+      .trim();
+  };
+
+  const handleGenreClick = (mediaType, genreName) => {
+    const slug = createGenreSlug(genreName);
+    window.location.href = `/genre/${mediaType}/${slug}`;
     setIsMoviesGenreOpen(false);
     setIsTvShowsGenreOpen(false);
   };
@@ -261,7 +274,7 @@ const Header = () => {
                 {moviesGenres.map(genre => (
                   <button
                     key={genre.id}
-                    onClick={() => handleGenreClick('movie', genre.id)}
+                    onClick={() => handleGenreClick('movie', genre.name)}
                     className="bg-gray-700 text-white py-2 px-4 rounded-full text-sm transition-colors duration-200 genre-button-movie"
                   >
                     {genre.name}
@@ -288,7 +301,7 @@ const Header = () => {
                 {tvGenres.map(genre => (
                   <button
                     key={genre.id}
-                    onClick={() => handleGenreClick('tv', genre.id)}
+                    onClick={() => handleGenreClick('tv', genre.name)}
                     className="bg-gray-700 text-white py-2 px-4 rounded-full text-sm transition-colors duration-200 genre-button-tv"
                   >
                     {genre.name}

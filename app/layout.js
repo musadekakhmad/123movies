@@ -9,6 +9,7 @@ import './globals.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import AdsterraLayoutWrapper from '../components/AdsterraLayoutWrapper';
+import NativeBanner from '../components/NativeBanner'; // Import komponen baru
 
 export const metadata = {
   // Changing title and description to English
@@ -57,9 +58,7 @@ export default function RootLayout({ children }) {
             <Header />
             {children}
             {/* Native Banner diletakkan di sini, sebelum Footer */}
-            <div id="container-a9dce3a8ac7a8f548d4f4ea5ed12df3a"></div>
-            {/* Anda juga perlu menambahkan skrip Native Banner di sini */}
-            <script async="async" data-cfasync="false" src="//discreetisabella.com/a9dce3a8ac7a8f548d4f4ea5ed12df3a/invoke.js"></script>
+            <NativeBanner />
             <Footer />
           </div>
         </AdsterraLayoutWrapper>
