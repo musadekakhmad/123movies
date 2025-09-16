@@ -92,9 +92,9 @@ const MovieApp = () => {
     <div className="bg-gray-900 text-white min-h-screen font-sans">
       <div className="container mx-auto p-4 md:p-8">
         <div className="mb-12 text-center">
-          <h1 className="text-3xl font-bold text-white mb-4">FMovies Watch: Watch Free Movies and TV Shows</h1>
+          <h1 className="text-3xl font-bold text-white mb-4">123Movies123: Watch Free Movies and TV Shows</h1>
           <p className="text-gray-300 text-justify">
-            FMovies Watch is your ultimate destination for high-quality free movie and TV show streaming. Explore our extensive collection of popular films, trending movies, and the most talked-about TV shows. With a user-friendly interface and a seamless video player, we ensure an enjoyable viewing experience. Start streaming today!
+            123Movies123 is your ultimate destination for high-quality free movie and TV show streaming. Explore our extensive collection of popular films, trending movies, and the most talked-about TV shows. With a user-friendly interface and a seamless video player, we ensure an enjoyable viewing experience. Start streaming today!
           </p>
         </div>
 
