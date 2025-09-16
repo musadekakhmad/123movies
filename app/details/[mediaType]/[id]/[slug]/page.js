@@ -25,13 +25,13 @@ export async function generateMetadata({ params }) {
     const mediaTitle = data.title || data.name;
 
     return {
-      title: `${mediaTitle} | Cine Visio`,
-      description: data.overview || `Information about ${mediaTitle} di Cine Visio.`,
+      title: `${mediaTitle} | 123Movies`,
+      description: data.overview || `Information about ${mediaTitle} di 123Movies.`,
     };
   } catch (err) {
     console.error('Error fetching metadata:', err);
     return {
-      title: 'Page Not Found | Cine Visio',
+      title: 'Page Not Found | 123Movies',
       description: 'The page you are looking for was not found.',
     };
   }
