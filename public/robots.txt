@@ -7,4 +7,4 @@ Disallow: /*?*
 Crawl-delay: 1
 
 # Sitemaps
-Sitemap: https://123movies123.netlify.app/sitemap.xml
+Sitemap: https://lk21-gratis.app/sitemap.xml
