@@ -1,30 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  // Tambahkan 'image.tmdb.org' dan 'placehold.co' ke daftar domain yang diizinkan untuk gambar.
+  // Ini diperlukan agar komponen next/image dapat memuat poster dan placeholder.
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'image.tmdb.org',
-        port: '',
-        pathname: '/t/p/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'placehold.co',
-        port: '',
-        pathname: '/**',
-      },
-    ],
-  },
-  async rewrites() {
-    return [
-      {
-        source: '/:id(\\d+)/:slug',
-        destination: '/movie/:id/:slug',
-      },
-    ];
+    domains: ['image.tmdb.org', 'placehold.co'],
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
